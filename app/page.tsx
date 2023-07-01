@@ -2,6 +2,9 @@
 import Container from "@mui/material/Container";
 import { Typography, Stack } from "@mui/material";
 import CardExamples from "./components/CardExamples";
+import Banner from "./components/Banner";
+import ImageLister from "./components/ImageLister";
+import "./globals.css";
 
 export default function Home() {
   return (
@@ -16,6 +19,13 @@ export default function Home() {
             Material UI test
           </Typography>
         </Stack>
+        <Banner title="titulo" subtitle="frase de subtitulo" />
+        <ImageLister />
+        <Banner
+          title="Second Banner"
+          subtitle="Subtitulo"
+          color="primary.dark"
+        />
         <CardExamples />
       </Stack>
     </Container>

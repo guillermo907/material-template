@@ -1,0 +1,25 @@
+:root {
+  /* Border radius */
+  --box-br: 8px;
+  --box-round-br: 15px;
+  --border-width: 3px;
+
+  --primary: #6b34eb;
+  --secondary: #34eb95;
+  --background: white;
+
+  .darkmode {
+    --background: rgba(0, 0, 0, 0.833);
+  }
+}
+
+/* .gradient-border {
+  border: var(--border-width) solid;
+  border-image: linear-gradient(45deg, #6b34eb, #34eb95) 1;
+} */
+.gradient-border {
+  border: var(--border-width) solid #0000;
+  border-radius: var(--box-br);
+  background: linear-gradient(var(--background), var(--background)) padding-box,
+    linear-gradient(45deg, var(--secondary), var(--primary)) border-box;
+}

@@ -9,6 +9,10 @@ export const theme = createTheme({
     secondary: {
       main: "#34eb95",
     },
+    background: {
+      /* #121212 is the default material color */
+      default: "#FFF",
+    },
   },
 });
 
@@ -20,6 +24,10 @@ export const darkTheme = createTheme({
     },
     secondary: {
       main: "#34eb95",
+    },
+    background: {
+      /* #121212 is the default material color */
+      default: "#121212",
     },
   },
 });

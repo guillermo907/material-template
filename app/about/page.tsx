@@ -11,7 +11,7 @@ function About() {
         <Box
           sx={{
             padding: "15px",
-            borderRadius: "7px",
+            borderRadius: "var(--box-br)",
             backgroundColor: "primary.main",
             color: "white",
             " &:hover": { backgroundColor: "primary.light", color: "white" },
@@ -31,7 +31,7 @@ function About() {
             padding: "15px",
             backgroundColor: "secondary.main",
             color: "black",
-            borderRadius: "7px",
+            borderRadius: "var(--box-br)",
             " &:hover": { backgroundColor: "secondary.light", color: "black" },
           }}
         >
@@ -49,7 +49,7 @@ function About() {
         <Box
           sx={{
             margin: "15px 0px",
-            borderRadius: "10px",
+            borderRadius: "var(--box-round-br)",
             width: "100%",
             padding: "15px",
             backgroundColor: "primary.main",
@@ -71,7 +71,7 @@ function About() {
         <Box
           sx={{
             margin: "15px 0px",
-            borderRadius: "10px",
+            borderRadius: "var(--box-round-br)",
             width: "100%",
             padding: "15px",
             backgroundColor: "secondary.main",

@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <meta name="viewport" content="initial-scale=1, width=device-width" />
-      <body className={inter.className}>
+      <body className={`${inter.className} ${darkMode ? "darkmode" : ""}`}>
         <ThemeProvider theme={darkMode ? darkTheme : theme}>
           <CssBaseline />
           <Header
