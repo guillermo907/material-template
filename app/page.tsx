@@ -5,11 +5,18 @@ import CardExamples from "./components/CardExamples";
 import Banner from "./components/Banner";
 import ImageLister from "./components/ImageLister";
 import "./globals.css";
+import FullscreenBanner from "./components/FullscreenBanner";
 
 export default function Home() {
   return (
-    <Container maxWidth="xl">
+    <Container maxWidth={false}>
       <Stack spacing={3}>
+        <FullscreenBanner
+          title="Web GDL"
+          color="rgba(74, 36, 164, 0.8)"
+          color2="#34eb95"
+          imgPath="/bannerBG1.jpg"
+        />
         <Stack
           direction={"row"}
           justifyContent={"space-between"}
@@ -24,7 +31,8 @@ export default function Home() {
         <Banner
           title="Second Banner"
           subtitle="Subtitulo"
-          color="primary.dark"
+          color="#6b34eba7"
+          color2="#34eb95"
         />
         <CardExamples />
       </Stack>

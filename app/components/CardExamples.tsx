@@ -61,10 +61,7 @@ function CardExamples() {
           </Card>
         </Box>
         <Box component="div" width={550}>
-          <Card
-            sx={{ backgroundColor: "error.main" }}
-            className="gradient-border"
-          >
+          <Card className="gradient-border">
             <CardMedia
               component="img"
               height="230"

@@ -1,16 +1,19 @@
 import { createTheme } from "@mui/material";
 
+//Need to also Change the variables in global.css
+const mainColor = "#6b34eb";
+const secondaryColor = "#34eb95";
+
 export const theme = createTheme({
   palette: {
     mode: "light",
     primary: {
-      main: "#6b34eb",
+      main: mainColor,
     },
     secondary: {
-      main: "#34eb95",
+      main: secondaryColor,
     },
     background: {
-      /* #121212 is the default material color */
       default: "#FFF",
     },
   },
@@ -20,13 +23,12 @@ export const darkTheme = createTheme({
   palette: {
     mode: "dark",
     primary: {
-      main: "#6b34eb",
+      main: mainColor,
     },
     secondary: {
-      main: "#34eb95",
+      main: secondaryColor,
     },
     background: {
-      /* #121212 is the default material color */
       default: "#121212",
     },
   },

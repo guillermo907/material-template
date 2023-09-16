@@ -7,19 +7,25 @@
   --primary: #6b34eb;
   --secondary: #34eb95;
   --background: white;
+  --section-background: rgb(231, 231, 231);
 
   .darkmode {
     --background: rgba(0, 0, 0, 0.833);
+    --section-background: rgb(45, 45, 45);
   }
 }
-
-/* .gradient-border {
-  border: var(--border-width) solid;
-  border-image: linear-gradient(45deg, #6b34eb, #34eb95) 1;
-} */
 .gradient-border {
   border: var(--border-width) solid #0000;
   border-radius: var(--box-br);
   background: linear-gradient(var(--background), var(--background)) padding-box,
     linear-gradient(45deg, var(--secondary), var(--primary)) border-box;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.MuiContainer-root {
+  padding-left: 0;
+  padding-right: 0;
 }
