@@ -1,11 +1,12 @@
 "use client";
-import "./globals.css";
-import { useState } from "react";
+import "./globals.scss";
+import { Suspense, useState } from "react";
 import { Inter } from "next/font/google";
 import Header from "./components/Header";
 import { ThemeProvider, CssBaseline } from "@mui/material";
 import { theme, darkTheme } from "./theme";
 import Footer from "./components/Footer";
+import Loading from "./loading";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,7 +27,7 @@ export default function RootLayout({
             darkMode={darkMode}
             toggleDarkMode={() => setDarkMode(!darkMode)}
           />
-          {children}
+          <Suspense fallback={<Loading />}>{children}</Suspense>
           <Footer />
         </ThemeProvider>
       </body>

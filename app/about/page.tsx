@@ -24,7 +24,7 @@ function About() {
       <FullscreenBanner
         title="Web GDL"
         color="var(--primary)"
-        color2="rgba(52, 235, 150, 0.8)"
+        color2="var(--primary-trans)"
         imgPath="/working1.jpg"
         /* btnLink="/" */
       />
@@ -153,6 +153,7 @@ function About() {
         imgPath="/working1.jpg"
       >
         <Box
+          className="box-shadow"
           sx={{
             alignSelf: "center",
             borderRadius: "var(--box-round-br)",

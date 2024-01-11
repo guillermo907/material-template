@@ -1,11 +1,15 @@
+$primary: #6b34eb;
+$secondary: #34eb95;
 :root {
   /* Border radius */
   --box-br: 8px;
   --box-round-br: 15px;
   --border-width: 3px;
 
-  --primary: #6b34eb;
-  --secondary: #34eb95;
+  --primary: #{$primary};
+  --secondary: #{$secondary};
+  --primary-trans: #{$primary}90;
+  --secondary-trans: #{$secondary}94;
   --background: white;
   --section-background: rgb(231, 231, 231);
 
@@ -19,6 +23,9 @@
   border-radius: var(--box-br);
   background: linear-gradient(var(--background), var(--background)) padding-box,
     linear-gradient(45deg, var(--secondary), var(--primary)) border-box;
+}
+.box-shadow {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px !important;
 }
 a {
   text-decoration: none;

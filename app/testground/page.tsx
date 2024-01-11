@@ -30,6 +30,7 @@ function Testground() {
   useEffect(() => {
     startInterval();
     getPosts();
+    fetchDataMock();
 
     return () => stopInterval();
   }, []);
@@ -58,6 +59,14 @@ function Testground() {
           {/* <Image src={post.url} width={200} height={200} alt={post.title} /> */}
         </div>
       );
+    });
+  };
+
+  const fetchDataMock = () => {
+    return new Promise((resolve) => {
+      setTimeout(() => {
+        resolve("Data has been fetched!");
+      }, 20000);
     });
   };
 

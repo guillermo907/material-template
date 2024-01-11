@@ -6,7 +6,7 @@ const Banner = (props: any) => {
       sx={{
         backgroundColor: props.color || "primary.main",
         background: `linear-gradient(45deg, ${props.color}, ${props.color2})`,
-        borderRadius: "var(--box-round-br)",
+        borderRadius: props.noRadius ? "0px" : "var(--box-round-br)",
         color: "white",
       }}
       padding={10}

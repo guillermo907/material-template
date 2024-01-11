@@ -1,40 +1,54 @@
 "use client";
 import Container from "@mui/material/Container";
-import { Typography, Stack } from "@mui/material";
+import { Typography, Stack, Box } from "@mui/material";
 import CardExamples from "./components/CardExamples";
 import Banner from "./components/Banner";
+import Services from "./components/sections/Services";
 import ImageLister from "./components/ImageLister";
-import "./globals.css";
+import "./globals.scss";
 import FullscreenBanner from "./components/FullscreenBanner";
+import Statistics from "./components/sections/Statistics";
 
 export default function Home() {
   return (
     <Container maxWidth={false}>
       <Stack spacing={3}>
         <FullscreenBanner
-          title="Web GDL"
-          color="rgba(74, 36, 164, 0.8)"
-          color2="#34eb95"
+          title="GDL Consultores"
+          color="var(--primary)"
+          color2="var(--secondary-trans)"
           imgPath="/bannerBG1.jpg"
         />
-        <Stack
-          direction={"row"}
-          justifyContent={"space-between"}
-          alignItems={"center"}
+        <Services />
+        <Banner title="titulo" subtitle="frase de subtitulo" noRadius />
+        <Statistics />
+        {/* <ImageLister /> */}
+        <FullscreenBanner
+          title=""
+          height="60vh"
+          color="var(--primary)"
+          color2="rgba(52, 235, 150, 0.1)"
+          imgPath="/working1.jpg"
         >
-          <Typography variant="h1" component="h1" gutterBottom>
-            Material UI test
-          </Typography>
-        </Stack>
-        <Banner title="titulo" subtitle="frase de subtitulo" />
-        <ImageLister />
-        <Banner
-          title="Second Banner"
-          subtitle="Subtitulo"
-          color="#6b34eba7"
-          color2="#34eb95"
-        />
-        <CardExamples />
+          <Box
+            className="box-shadow"
+            sx={{
+              alignSelf: "center",
+              borderRadius: "var(--box-round-br)",
+              width: "80%",
+              padding: "15px",
+              color: "white",
+            }}
+          >
+            <Typography variant="h2" gutterBottom>
+              Center
+            </Typography>
+            <Typography>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+              velit ipsum sed nesciunt animi.
+            </Typography>
+          </Box>
+        </FullscreenBanner>
       </Stack>
     </Container>
   );

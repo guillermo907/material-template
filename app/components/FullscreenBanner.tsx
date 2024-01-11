@@ -32,7 +32,13 @@ const FullscreenBanner = (props: FullscreenBannerProps) => {
       justifyContent={"center"}
     >
       <Stack className="content" justifyContent={"center"} height={"100%"}>
-        <Typography variant="h1" align="center" marginX={0}>
+        <Typography
+          variant="h1"
+          textOverflow={"unset"}
+          align="center"
+          sx={{ wordBreak: "break-word" }}
+          marginX={0}
+        >
           {props.title}
         </Typography>
         <Typography variant="h4" align="center" marginX={0} gutterBottom>

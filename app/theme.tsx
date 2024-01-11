@@ -1,6 +1,5 @@
 import { createTheme } from "@mui/material";
 
-//Need to also Change the variables in global.css
 const mainColor = "#6b34eb";
 const secondaryColor = "#34eb95";
 
