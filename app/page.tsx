@@ -7,18 +7,14 @@ import Services from "./components/sections/Services";
 import ImageLister from "./components/ImageLister";
 import "./globals.scss";
 import FullscreenBanner from "./components/FullscreenBanner";
+import ImageSlider from "./components/ImageSlider";
 import Statistics from "./components/sections/Statistics";
 
 export default function Home() {
   return (
     <Container maxWidth={false}>
       <Stack spacing={3}>
-        <FullscreenBanner
-          title="GDL Consultores"
-          color="var(--primary)"
-          color2="var(--secondary-trans)"
-          imgPath="/bannerBG1.jpg"
-        />
+        <ImageSlider />
         <Services />
         <Banner title="titulo" subtitle="frase de subtitulo" noRadius />
         <Statistics />

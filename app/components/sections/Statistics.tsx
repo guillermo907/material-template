@@ -4,6 +4,7 @@ import Image from "next/image";
 const Statistics = () => {
   return (
     <Stack
+      className="gradient-border"
       width={"95%"}
       maxWidth={"1600px"}
       justifySelf={"center"}
